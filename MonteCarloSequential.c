@@ -38,6 +38,10 @@ int main(int argc, char *argv[]) {
     checksums(num_tasks, counts, &total, &checksum);
     double pi = 4.0 * total / ((double) num_tasks * n);
 
+    printf("RESULT version=seq P=1 tasks=%d points=%d grain=0 time=%.6f "
+       "hits=%lld checksum=%lld pi=%.10f\n",
+       num_tasks, n, toc - tic, total, checksum, pi);
+
     free(counts);
     return 0;
 }
