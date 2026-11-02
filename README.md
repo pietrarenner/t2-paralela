@@ -45,7 +45,7 @@ Para rodar o código sequencial:
 sbatch scripts/seq.sbatch
 ```
 
-para rodar para escalabilidade forte:
+Para rodar para escalabilidade forte:
 
 ```bash
 sbatch scripts/strong.sbatch
